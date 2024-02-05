@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscription form</title>
+</head>
+<body>
+    <form action="/subs-data" method="POST">
+        <label for="name">Name</label>
+        <input type="text" name="name"> <br> <br>
+        <label for="password">password</label>
+        <input type="password" name="password"> <br> <br>
+        <input type="checkbox" required> <label for="subs">Subscribe to the news letter</label>
+        <label for="format">Format of the email:</label> <br> <br>
+        <input type="radio" name="emailType" id="HTML-type" value="HTML"> HTML <br> <br>
+        <input type="radio" name="emailType" id="plain-type" value="Plain-text">PLain-Text <br> <br>
+        <label for="type">Type of description do you want</label> <br> <br>
+        <select name="subType">
+            <option value="free">Standard-free</option>
+            <option value="cost">Cost</option>
+        </select> <br>
+        <label for="comments">Comments on the editor</label> <br>
+        <textarea name="comments"  cols="30" rows="10"></textarea> <br>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
